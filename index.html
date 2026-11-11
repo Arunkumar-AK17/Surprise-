@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#071a35">
+  <title>Happy Birthday, Rajesh! 💙</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Pacifico&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="stars" aria-hidden="true"></div>
+  <div id="confettiBurst" class="confetti-burst" aria-hidden="true"></div>
+  <div class="orbs orb-one"></div><div class="orbs orb-two"></div>
+  <section class="question-screen" id="questionScreen">
+    <div class="question-card">
+      <div class="question-heart">💙</div>
+      <p class="question-kicker">BEFORE YOUR SURPRISE...</p>
+      <h1 class="question-title">Rajesh, are you my friend?</h1>
+      <p class="question-subtitle">Think carefully... this is a very important question! 😌</p>
+      <div class="answer-buttons">
+        <button class="yes-button" id="yesButton">Yes, of course! 💙</button>
+        <button class="no-button" id="noButton">No 😏</button>
+      </div>
+      <p class="question-hint" id="questionHint">Choose wisely, bestie!</p>
+    </div>
+  </section>
+  <main class="page stage hidden" id="birthdayPage">
+    <div class="top-tag"><span class="spark">✦</span> A little something for you <span class="spark">✦</span></div>
+
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">TODAY IS ALL ABOUT YOU</p>
+        <h1><span>Happy</span><strong>Birthday!</strong></h1>
+        <p class="subtitle">To my favourite human, my partner in chaos, and one of life's best gifts.</p>
+        <div class="date-pill"><span>✦</span> 12 · 11 · 2026 <span>✦</span></div>
+        <button class="open-button" id="openLetter">Open your birthday letter <span>♡</span></button>
+      </div>
+
+      <div class="birthday-art">
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+        <div class="photo-frame"><img class="hero-portrait" src="images/rajesh-portrait.jpg" alt="Rajesh birthday portrait"></div>
+        <div class="floating balloon balloon-left">🎈</div>
+        <div class="floating balloon balloon-right">🎈</div>
+        <div class="floating star star-left">✦</div>
+        <div class="floating star star-right">✧</div>
+        <div class="name-ribbon">RAJESH <span>♡</span></div>
+      </div>
+    </section>
+
+    <div class="stage-actions"><button class="next-button" data-next="photosPage">Next: our memories →</button></div>
+    <p class="footer-note">Made with friendship, a little madness & lots of love 💙</p>
+
+  </main>
+
+  <section class="page stage hidden" id="photosPage">
+    <section class="photo-memories">
+      <div class="section-heading">
+        <p class="eyebrow">OUR LITTLE CORNER</p>
+        <h2>Some moments, <span>forever.</span></h2>
+        <p>A few favourite moments, five years of friendship, and memories that never get old. 💙</p>
+      </div>
+      <div class="memory-gallery" id="memoryGallery">
+        <figure class="memory-photo"><img src="images/memory-01.jpg" alt="Two friends together among the trees"><figcaption>Side by side, always 💙</figcaption></figure>
+        <figure class="memory-photo"><img src="images/memory-06.jpg" alt="A group of school friends together"><figcaption>The gang 🤝</figcaption></figure>
+        <figure class="memory-photo"><img src="images/memory-07.jpg" alt="Two friends standing together outdoors"><figcaption>Good times, great people</figcaption></figure>
+        <figure class="memory-photo"><img src="images/memory-11.jpg" alt="Two friends taking a selfie together"><figcaption>One more for infinity ♾️</figcaption></figure>
+      </div>
+      <p class="photo-tip">Only shared and group photos are included here — no solo portraits.</p>
+    </section>
+    <section class="memory-strip">
+      <div class="memory-icon">♾️</div>
+      <div><p class="memory-title">5 years of friendship</p><p class="memory-sub">Countless laughs. Unforgettable moments. An infinity still waiting for us.</p></div>
+    </section>
+
+    <div class="stage-actions"><button class="back-button" data-back="birthdayPage">← Back</button><button class="next-button" data-next="idiotPage">One more surprise →</button></div>
+  </section>
+
+  <section class="page stage hidden idiot-stage" id="idiotPage">
+    <p class="eyebrow">A VERY IMPORTANT AWARD CEREMONY</p>
+    <h2 class="idiot-heading">And the award goes to...</h2>
+    <div class="certificate-frame"><img src="idiot-certificate.png" alt="Certified legendary idiot award for Rajesh"></div>
+    <p class="idiot-caption">No appeals. No refunds. Best friend certified. 😂</p>
+    <div class="stage-actions"><button class="back-button" data-back="photosPage">← Back</button><button class="next-button" data-next="cakePage">Cake time, birthday boy! →</button></div>
+  </section>
+
+  <section class="page stage hidden cake-stage" id="cakePage">
+    <p class="eyebrow">MAKE A WISH, RAJESH</p><h2 class="cake-heading">Your birthday cake is ready! 🎂</h2>
+    <p class="cake-subtitle">Close your eyes, make a big wish… and blow! 💙</p>
+    <div class="cake-scene" aria-label="Birthday cake with five glowing candles">
+      <div class="candle-row"><div class="candle"><span class="flame"></span></div><div class="candle"><span class="flame"></span></div><div class="candle"><span class="flame"></span></div><div class="candle"><span class="flame"></span></div><div class="candle"><span class="flame"></span></div></div>
+      <div class="cake-top"></div><div class="cake-body"><div class="icing"></div><div class="cake-dots">✦　♡　✦　♡　✦</div></div><div class="cake-plate"></div>
+    </div>
+    <button class="blow-button" id="blowButton">Uffff! Blow out the candles 💨</button>
+    <p class="blown-message hidden" id="blownMessage">Wish sent to the universe! ✨ May it come true. 💙</p>
+    <div class="stage-actions hidden" id="cakeNextActions"><button class="back-button" data-back="idiotPage">← Back</button><button class="next-button" data-next="giftPage">One last surprise 🎁</button></div>
+  </section>
+
+  <section class="page stage hidden gift-stage" id="giftPage">
+    <p class="eyebrow">A SPECIAL GIFT FOR YOU</p>
+    <h2 class="gift-title">Your gift is finally here! 🎁</h2>
+    <p class="gift-subtitle">Ready, Rajesh? Open your present...</p>
+    <button class="gift-box" id="giftReveal" aria-label="Open your birthday gift">
+      <span class="gift-bow">🎀</span><span class="gift-emoji">🎁</span><span class="gift-tap">TAP TO OPEN</span>
+    </button>
+    <div class="gift-reveal hidden" id="giftMessage">
+      <p class="gift-kicker">PLOT TWIST 😂</p>
+      <h3>Your biggest gift is...</h3>
+      <div class="gift-me">ME! 🤣💙</div>
+      <p>Arun — your free, lifetime best-friend package.</p>
+      <p class="gift-perks">Includes unlimited teasing, random laughs, crazy memories, and a friend who has your back. ♾️</p>
+      <p class="gift-foot">No exchange. No return. You're stuck with me! 😂</p>
+    </div>
+    <div class="stage-actions"><button class="back-button" data-back="cakePage">← Back</button><button class="next-button" data-next="finalPage">Let the party begin! 🎉</button></div>
+  </section>
+
+  <section class="page stage hidden final-stage" id="finalPage">
+    <div class="final-glow">💙</div><p class="eyebrow">ONE LAST THING, BESTIE</p>
+    <h1 class="final-title">Happy Birthday,<br><span>Rajesh!</span></h1>
+    <p class="final-message">May your days be filled with laughter, your dreams find their way to reality, and your life always give you reasons to smile.</p>
+    <p class="final-friendship">Five years behind us. A lifetime of friendship ahead. ♾️</p>
+    <div class="final-sign">Always your friend. Always your idiot partner. 🫂</div><div class="final-confetti">🎉　🎂　🎈　✨　🎁</div>
+    <button class="next-button replay-button" id="replayButton">Replay the surprise ↻</button>
+  </section>
+
+  <div class="modal" id="letterModal" aria-hidden="true">
+    <div class="letter-card" role="dialog" aria-modal="true" aria-labelledby="letterTitle">
+      <button class="close-button" id="closeLetter" aria-label="Close letter">×</button>
+      <div class="letter-sparkle">✦　♡　✦</div>
+      <p class="letter-kicker">A NOTE FROM YOUR BEST FRIEND</p>
+      <h2 id="letterTitle">Dear Rajesh,</h2>
+      <p class="letter-message" id="letterMessage"></p>
+      <p class="letter-sign">Always your friend, <span>♡</span></p>
+      <div class="letter-bottom">FIVE YEARS DOWN · FOREVER TO GO ♾️</div>
+    </div>
+  </div>
+
+  <script>
+    const message = "You are more than a best friend; you are one of the most special parts of my life. Thank you for five years of laughter, crazy moments, and memories I will always carry with me. No matter where life takes us, I hope we keep making memories, celebrating every little thing, and standing by each other. You deserve all the happiness this world can offer. Happy birthday, Rajesh! Our friendship isn't measured in memories — it's an infinity of them. 💙♾️";
+    const letter = document.getElementById("letterMessage");
+    let typingTimer;
+    let index = 0;
+
+    function openLetter() {
+      document.getElementById("letterModal").classList.add("show");
+      document.getElementById("letterModal").setAttribute("aria-hidden", "false");
+      letter.textContent = "";
+      index = 0;
+      clearInterval(typingTimer);
+      typingTimer = setInterval(() => {
+        letter.textContent += message.charAt(index);
+        index++;
+        if (index >= message.length) clearInterval(typingTimer);
+      }, 28);
+    }
+    function closeLetter() {
+      document.getElementById("letterModal").classList.remove("show");
+      document.getElementById("letterModal").setAttribute("aria-hidden", "true");
+      clearInterval(typingTimer);
+    }
+    document.getElementById("openLetter").addEventListener("click", openLetter);
+    document.getElementById("closeLetter").addEventListener("click", closeLetter);
+    document.getElementById("letterModal").addEventListener("click", e => {
+      if (e.target.id === "letterModal") closeLetter();
+    });
+    document.addEventListener("keydown", e => {
+      if (e.key === "Escape") closeLetter();
+    });
+
+    // Friendship question: YES opens the birthday page; NO playfully changes.
+    const questionScreen = document.getElementById("questionScreen");
+    const birthdayPage = document.getElementById("birthdayPage");
+    const noButton = document.getElementById("noButton");
+    const questionHint = document.getElementById("questionHint");
+    const noMessages = [
+      "Wrong answer! Try again, Rajesh 😜",
+      "That option is suspiciously unavailable 😂",
+      "Five years of friendship and you say no? 🥺",
+      "The NO button is getting shy! 🙈",
+      "One more chance, bestie. Choose YES! 💙"
+    ];
+    let noCount = 0;
+    noButton.addEventListener("click", () => {
+      questionHint.textContent = noMessages[noCount % noMessages.length];
+      noCount++;
+      noButton.textContent = noCount % 2 ? "Are you sure? 🤨" : "Nope? Try again 😅";
+      noButton.style.transform = `translate(${(noCount % 2 ? 1 : -1) * (18 + noCount * 3)}px, ${noCount % 3 === 0 ? -12 : 8}px)`;
+    });
+    function showStage(id) {
+      const current = document.querySelector(".stage:not(.hidden)");
+      const target = document.getElementById(id);
+      if (current && target && current !== target) launchSideConfetti();
+      document.querySelectorAll(".stage").forEach(stage => stage.classList.add("hidden"));
+      target.classList.remove("hidden"); target.classList.add("reveal-page");
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+    document.getElementById("yesButton").addEventListener("click", () => {
+      // Dismiss the friendship question permanently for this visit.
+      questionScreen.classList.add("fade-away");
+      showStage("birthdayPage");
+      window.setTimeout(() => questionScreen.classList.add("hidden"), 520);
+    });
+    document.querySelectorAll("[data-next]").forEach(button => button.addEventListener("click", () => showStage(button.dataset.next)));
+    document.querySelectorAll("[data-back]").forEach(button => button.addEventListener("click", () => showStage(button.dataset.back)));
+    function launchSideConfetti() {
+      const layer = document.getElementById("confettiBurst");
+      layer.innerHTML = "";
+      layer.classList.remove("active");
+      void layer.offsetWidth;
+      const symbols = ["🎉", "✨", "💙", "🎊", "✦", "❋"];
+      for (const side of ["left", "right"]) {
+        for (let i = 0; i < 34; i++) {
+          const piece = document.createElement("span");
+          piece.className = "confetti-piece " + side;
+          piece.textContent = symbols[Math.floor(Math.random() * symbols.length)];
+          piece.style.setProperty("--y", (Math.random() * 82 - 41) + "vh");
+          piece.style.setProperty("--spread", (Math.random() * 190 + 70) + "px");
+          piece.style.setProperty("--delay", (Math.random() * 180) + "ms");
+          piece.style.setProperty("--spin", (Math.random() * 720 - 360) + "deg");
+          layer.appendChild(piece);
+        }
+      }
+      layer.classList.add("active");
+      setTimeout(() => { layer.classList.remove("active"); layer.innerHTML = ""; }, 2400);
+    }
+
+
+    document.getElementById("blowButton").addEventListener("click", () => {
+      document.querySelectorAll(".flame").forEach(flame => flame.classList.add("extinguished"));
+      document.getElementById("blowButton").disabled = true;
+      document.getElementById("blowButton").textContent = "Candles blown out! 🎉";
+      document.getElementById("blownMessage").classList.remove("hidden");
+      document.getElementById("cakeNextActions").classList.remove("hidden");
+    });
+    document.getElementById("giftReveal").addEventListener("click", () => {
+      document.getElementById("giftMessage").classList.remove("hidden");
+      document.getElementById("giftReveal").classList.add("opened");
+      document.getElementById("giftReveal").disabled = true;
+      document.getElementById("giftReveal").querySelector(".gift-tap").textContent = "SURPRISE! 😂";
+      launchSideConfetti();
+    });
+
+    document.getElementById("replayButton").addEventListener("click", () => {
+      document.querySelectorAll(".flame").forEach(flame => flame.classList.remove("extinguished"));
+      document.getElementById("blowButton").disabled = false;
+      document.getElementById("blowButton").textContent = "Uffff! Blow out the candles 💨";
+      document.getElementById("blownMessage").classList.add("hidden");
+      document.getElementById("cakeNextActions").classList.add("hidden");
+      document.getElementById("giftMessage").classList.add("hidden");
+      document.getElementById("giftReveal").classList.remove("opened");
+      document.getElementById("giftReveal").disabled = false;
+      document.getElementById("giftReveal").querySelector(".gift-tap").textContent = "TAP TO OPEN";
+      noCount = 0; noButton.textContent = "No 😏"; noButton.style.transform = "";
+      questionHint.textContent = "Choose wisely, bestie!"; questionScreen.classList.add("hidden"); showStage("birthdayPage");
+    });
+
+    // Gentle floating sparkle field
+    const stars = document.querySelector(".stars");
+    for (let i = 0; i < 34; i++) {
+      const dot = document.createElement("span");
+      dot.className = "tiny-star";
+      dot.textContent = i % 3 === 0 ? "✦" : "·";
+      dot.style.left = Math.random() * 100 + "%";
+      dot.style.top = Math.random() * 100 + "%";
+      dot.style.animationDelay = Math.random() * 5 + "s";
+      stars.appendChild(dot);
+    }
+  </script>
+</body>
+</html>
